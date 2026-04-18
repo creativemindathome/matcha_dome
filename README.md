@@ -2,7 +2,9 @@
 
 This repository contains the **`matcha dome`** export: the single-page HTML, `images/`, and `uploads/`.
 
-Open `Platôme Matcha.html` in a browser (double-click or serve the folder locally).
+Open `index.html` or `Platôme Matcha.html` in a browser (double-click or serve the folder locally). `index.html` is a copy of the same page so `/` works on hosts like Vercel.
+
+**Vercel:** the project must use the **Other** framework (see `vercel.json`). If an old deployment still runs `next build`, open the project on Vercel → Settings → General → clear **Build Cache**, then redeploy.
 
 There is no Node.js app in this version—the previous Next.js scaffold was removed in favor of this folder layout.
 
