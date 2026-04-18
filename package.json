@@ -1,8 +1,5 @@
 {
   "name": "matcha-dome",
   "private": true,
-  "scripts": {
-    "build": "exit 0",
-    "vercel-build": "exit 0"
-  }
+  "description": "Static HTML site; assets live in /public. Not a Next.js app."
 }

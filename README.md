@@ -1,11 +1,14 @@
 # Platôme Matcha (static export)
 
-This repository contains the **`matcha dome`** export: the single-page HTML, `images/`, and `uploads/`.
+The site lives under **`public/`** (that is what Vercel deploys when `outputDirectory` is set to `public`):
 
-Open `index.html` or `Platôme Matcha.html` in a browser (double-click or serve the folder locally). `index.html` is a copy of the same page so `/` works on hosts like Vercel.
+- `public/index.html` — open locally or at `/` on Vercel
+- `public/Platôme Matcha.html` — same page as `index.html`
+- `public/images/` — image assets referenced by the page
+- `public/uploads/` — extra assets and markdown copies
 
-**Vercel:** the project must use the **Other** framework (see `vercel.json`). If an old deployment still runs `next build`, open the project on Vercel → Settings → General → clear **Build Cache**, then redeploy.
+**Local preview:** from the repo root run `npx serve public` (or open `public/index.html` in a browser).
 
-There is no Node.js app in this version—the previous Next.js scaffold was removed in favor of this folder layout.
+**Vercel:** `vercel.json` sets `framework` to `null` (Other) and deploys the **`public`** directory. If the dashboard still shows **Next.js** as the framework, open **Project → Settings → General**, set **Framework Preset** to **Other**, clear **Build Cache**, and redeploy—otherwise Vercel may look for a `next` dependency that this repo does not use.
 
-Older commits still contain the full `/docs` spec set (including `03-landing-page.md` and `04-image-manifest.md`) if you need them: `git log --oneline` then `git show <commit>:docs/03-landing-page.md`.
+Older commits still contain the full `/docs` spec set if you need them: `git log --oneline` then `git show <commit>:docs/03-landing-page.md`.
