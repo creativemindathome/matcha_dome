@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Platôme Matcha
+
+Specifications live in [`docs/`](./docs/)—read `01-brief.md` through `05-build-script.md` in order before implementing features.
+
+For preorder checkout, set `NEXT_PUBLIC_STRIPE_PAYMENT_LINK` in `.env.local` (see the manual checklist in `docs/05-build-script.md`).
+
 ## Getting Started
 
 First, run the development server:
